@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <form id="bmiForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="date" id="dob" placeholder="Date of Birth" required />
+      <input type="number" id="height" placeholder="Height (in cm)" required />
+      <input type="number" id="weight" placeholder="Weight (in kg)" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Hello, <span id="displayName"></span>!</h2>
+      <p>Your BMI is <strong id="bmiValue"></strong> – <span id="bmiStatus"></span></p>
+      <h3>Recommended Diet Plan</h3>
+      <p id="dietSuggestion"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
